@@ -4,9 +4,12 @@
   "description": "my first socket.io app",
   "dependencies": {
     "express": "^4.15.2",
+    "parcel": "^1.11.0",
     "socket.io": "^1.7.3"
   },
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "dev": "parcel watch src/index.html & nodemon index.js --watch index.js",
+    "build": "parcel build src/index.html"
   }
 }
